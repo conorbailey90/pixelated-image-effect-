@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "NeueBit";
+  src: url(./fonts/NeueBit-Regular.woff2) format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "NeueBit", monospace;
+  list-style: none;
+  color: #d8fa30;
+}
+
+html,
+body {
+  background-color: #262525;
+  height: 2000px;
+}
+
+canvas {
+  position: fixed;
+  z-index: 2;
+  pointer-events: none;
+}
+
+section {
+  position: relative;
+  padding: 10vh 2vw;
+  height: 100vh;
+  width: 100vw;
+}
+
+.projects {
+  width: 100%;
+  height: 100%;
+}
+
+.projects ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+li {
+  position: relative;
+  border-bottom: 1px solid #d8fa3054;
+  cursor: pointer;
+  font-size: 6vw;
+  font-weight: 400;
+}
+
+.project-image {
+  opacity: 0%;
+  position: absolute;
+  top: -100%;
+  pointer-events: none;
+  user-select: none;
+}
